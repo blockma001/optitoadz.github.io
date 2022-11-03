@@ -1,0 +1,506 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Optimitic Toadz</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.4.6.0.css">
+	<link href="css/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-en.css">
+	<link rel="icon" href="images/icon20191015195023.png" type="image/x-icon"/>
+</head>
+
+<body>
+	<div id="preloader">
+		<div id="status"><img src="picture/loader.gif" id="preloader_image" alt="loader">
+		</div>
+	</div>
+	<!--Header area start here-->
+	<div section-scroll='0' class="wd_scroll_wrap">
+		<header class="gc_main_menu_wrapper" style="line-height: 51px;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
+						<div class="logo-area">
+							<a href="cn.html"><img src="picture/logo20191014173229.png" alt="logo" /></a>
+						</div>
+					</div>			
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-6">
+						<div class="menu-area  hidden-xs">
+							<nav class="wd_single_index_menu btc_main_menu">
+								<ul>
+									<li><a href="0">Home</a></li>
+									<li><a href="1">Project profile</a></li>
+									<li><a href="2">FAQ</a></li>						
+									<li><a href="5">Roadmap for products</a></li>
+									<!--<li><a href="7">常见问题</a></li>-->
+								</ul>
+							</nav>
+							
+						</div>
+						<!-- mobile menu area start -->
+						<div class="rp_mobail_menu_main_wrapper visible-xs">
+							<div class="row">
+								<div class="col-xs-12">
+									<div id="toggle">
+										<svg xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+											y="0px" viewBox="0 0 31.177 31.177"
+											style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve"
+											width="25px" height="25px">
+											<g>
+												<g>
+													<path class="menubar"
+														d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z"
+														fill="#fff" />
+												</g>
+												
+												<g>
+													<path class="menubar"
+														d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z"
+														fill="#fff" />
+												</g>
+												
+												<g>
+													<path class="menubar"
+														d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z"
+														fill="#fff" />
+												</g>
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div id="sidebar">
+								<!--<h1><a href="#">Bit Money</a></h1>-->
+								<!--<div id="toggle_close">&times;</div>-->
+								<div id='cssmenu' class="wd_single_index_menu">
+									<ul >
+                    <li onClick="hidright()"><a href="0">Home</a></li>
+                    <li onClick="hidright()"><a href="1">Project profile</a></li>
+                    <li onClick="hidright()"><a href="2">FAQ</a></li>						
+                    <li onClick="hidright()"><a href="5">Roadmap for products</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Mobile Menu  End -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Header area end here-->
+		<!--Slider area start here-->
+		<section class="slider-area">
+			<canvas id="canvas" style="display: none;">
+			
+		</canvas>
+			<div id="particles-js">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="carousel-captions caption-1">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div class="slider-content slider-contentbg">
+												
+												<h2 id="p11" data-animation="animated bounceInLeft">Optimitic Toadz<br><span style="font-size:18px;font-weight: normal;letter-spacing: normal;">Mint Price: 0.00088ETH<br/></span>
+												</h2>
+												<div class="buttons">
+													<button id="connectBtn" class="btn1 btnbg"
+														data-animation="animated bounceInUp">Connect Wallet</button>
+													<button id="mintBtn" target="_blank" class="btn2 btnbg"
+														data-animation="animated bounceInUp">Mint</button>
+													<input id="ethAmount" placeholder="Amount: 1~10" />
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+											<div class="btc_slider_about_img" data-animation="animated bounceInDown">
+												<img src="picture/20191014163342.png"  alt="about_img">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="slider-content">
+											<ul>
+												<li data-animation="animated bounceInDown" class="slider_social_icon1">
+													<a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li data-animation="animated bounceInDown" class="slider_social_icon2">
+													<a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li data-animation="animated bounceInDown" class="slider_social_icon3">
+													<a href="#"><i class="fa fa-send-o"></i></a></li>
+												<li data-animation="animated bounceInDown" class="slider_social_icon4">
+													<a href="#"><i class="fa fa-bitcoin"></i></a></li>
+												<li data-animation="animated bounceInDown" class="slider_social_icon5">
+													<a href="#"><i class="fa fa-envelope"></i></a></li>
+											</ul>
+											<h2 data-animation="animated bounceInLeft">Block chain & <br>the latest
+												technology development</h2>
+											<div class="buttons">
+												<a href="#" class="btn1"
+													data-animation="animated bounceInUp">WHITEPAPER</a>
+												<a href="#" class="btn2" data-animation="animated bounceInUp">see
+													information</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs hidden-sm">
+										<div class="btc_slider_about_img" data-animation="animated bounceInDown">
+											<img src="picture/1.png" alt="about_img">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+	
+	<div section-scroll='1' class="wd_scroll_wrap">
+		<section class="about-area about-areato pd-t70 pd-b100 jarallax bg-img">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="about-content">
+							<h2 class="f-40 fw-400 wow  fadeIn fadeIn1 animated" data-wow-duration="1.0s"
+								style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;text-align: center;">Project profile</h2>						
+                                                                                                                 <p class="wow  fadeIn animated" data-wow-duration="1.3s"
+								style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
+								In these tough crypto-winter times, it's a bit complicated to remain #OPtimistic vibes. But we are here to declare that even in arduous conditions, it is possible to stay focused, build and finally change the game!
+							</p>
+							<p class="wow  fadeIn animated" data-wow-duration="1.6s"
+								style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
+								Optimistic Toadz is not a copy and an attempt to snatch a hype or be similar, but a turning point in the history of derivatives on $OP. We're so happy to be here! Meetings and greetings: the 6969 optimistic toadzs are ready to melt your heart and charge a dose of #optimism to overcome the current crisis together.
+							</p>
+							<p class="wow  fadeIn animated" data-wow-duration="1.9s"
+								style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
+								We have also developed a unique system for blocking NFTs from the treasury of the community in our optimism contract and fractalization of blocked NFTs, and all treasury assets will be evenly distributed in this way among the holders of the collection!
+							</p>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+						style="position: fixed;left: 3.125rem;top: -100rem;">
+						<div class="btc_timer_section_wrapper">
+							<div id="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">Days</div>
+								</div>
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">Hours</div>
+								</div>
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">Minutes</div>
+								</div>
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">Seconds</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		
+	</div>
+	<div section-scroll='2' class="wd_scroll_wrap">
+		<section class="features-area section">
+			<div id="features-js">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="section-heading2 wow  fadeIn animated" data-wow-duration="1.0s"
+								style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+								<h2>FAQ</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="featured-lists">
+								<ul>
+									<li>
+										<div class="col-sm-6 pd-0 hidden-xs wow  fadeIn animated"
+											data-wow-duration="1.3s"
+											style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
+											<div class="contents-l mr-b30">
+												<h2>What is the total supply?</h2>
+												<p>
+													There're 6969 unique Toadzs.                          
+												</p>
+											</div>
+										</div>
+										<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.3s"
+											style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
+											<div class="imgs-l">
+												<figure><img src="picture/icon20191014172402.png" alt="" /></figure>
+											</div>
+										</div>
+									</li>
+									<li class="rl">
+										<div class="col-sm-6 pd-0 floatright mr-b30 hidden-xs wow  fadeIn animated"
+											data-wow-duration="1.6s"
+											style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
+											<div class="contents-r">
+												<h2>What is the mint price?</h2>
+												<p>Each Toadz is 0.00088ETH ~ ($1.3)</p>
+											</div>
+										</div>
+										<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.6s"
+											style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
+											<div class="imgs-r">
+												<figure>
+													<img src="picture/icon20191014172410.png" alt="" />
+												</figure>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="col-sm-6 pd-0 hidden-xs wow  fadeIn animated"
+											data-wow-duration="1.9s"
+											style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
+											<div class="contents-l mr-b30">
+												<h2>When can us start mint?</h2>
+												<p> Now!
+												</p>
+											</div>
+										</div>
+										<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.9s"
+											style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
+											<div class="imgs-l">
+												<figure><img src="picture/icon20191014172352.png" alt="" /></figure>
+											</div>
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div section-scroll='3' class="wd_scroll_wrap">
+
+	</div>
+	
+	<div section-scroll='5' class="wd_scroll_wrap">
+		<section class="video-area ">
+			<div id="video-js">
+				<div class="container">
+					<div class="row">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="wd_scroll_wrap">
+			<section class="video-des bg-img ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="videos-heding" style="text-align: center;padding: 50px 0px;">
+								<h2 class="wow  fadeIn fadeIn1 animated" data-wow-duration="1.0s"
+									style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;    font-size: 40px;
+    font-weight: 400;">Roadmap for product</h2>
+								<div class="videos-box">
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="deslidt">
+								<ul>
+									<li class="desili">
+										
+									<span class="years"><span class="con">2022</span></span>
+									<div class="serials">
+										<span class="cre"></span>
+										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+											<div class="box-con">
+												<div class="dbox">
+													<div class="dleft dleft1" style="">
+														<div class="imgs imgs1"><img src="picture/icon_01.png" alt="" /></div>
+													</div>
+													<div class="dright">
+														<div class="content">
+															<h3>website launch</h3>
+															<p>November 2022</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12 right-con  wow fadeIntd  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
+											<div class="box-con">
+												<div class="dbox dboxto dboxto1" style="display: flex;justify-content: space-between;">
+													<div class="dleft">
+														<div class="content">
+															<h3>unique traits inspired by BAYC</h3>
+															<p>November 2022</p>
+														</div>
+													</div>
+													<div class="dright dright2" style="">
+														<div class="imgs imgs1"><img src="picture/icon_02.png" alt="" /></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="serials">
+										<span class="cre"></span>
+										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+											<div class="box-con">
+												<div class="dbox">
+													<div class="dleft">
+														<div class="imgs imgs1"><img src="picture/icon_03.png" alt="" /></div>
+													</div>
+													<div class="dright">
+														<div class="content">
+															<h3>community treasury</h3>
+															<p>December 2022</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12 right-con fadeIntd  wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
+											<div class="box-con">
+												<div class="dbox dboxto"  style="display: flex;justify-content: space-between;">
+													<div class="dleft">
+														<div class="content">
+															<h3>project governance delegated to the community</h3>
+															<p>December 2022</p>
+														</div>
+													</div>
+													<div class="dright dright4" style="">
+														<div class="imgs imgs1 imgtop"><img src="picture/icon_04.png" alt="" /></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="serials serials1">
+										<span class="cre cre1"></span>
+										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+											<div class="box-con">
+												<div class="dbox">
+													<div class="dleft dleftt" style="">
+														<div class="imgs imgs1"><img src="picture/icon_05.png" alt="" /></div>
+													</div>
+													<div class="dright">
+														<div class="content">
+															<h3>community allocations in launching projects</h3>
+															<p>December 2022</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									</li>
+
+							</div>
+						</div>
+						</ul>
+					</div>
+				</div>
+		</div>
+		</section>
+		
+	</div>
+	</div>
+	<!--到此-->
+	<div section-scroll='6' class="wd_scroll_wrap">
+		
+		
+	</div>
+	<!--到此-->
+	<div section-scroll='7' class="wd_scroll_wrap">
+		
+		
+		<footer class="foo-bot">
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="copyright copyrighto wow  fadeIn animated" data-wow-duration="1.9s"
+								style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;text-align: center;">
+								<p>Copyright &copy; 2022  Optimistic Toadz (substitution of any currency is prohibited) All rights reserved.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--Footer area end here-->
+	<!-- all js here -->
+	<!-- jquery latest version -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- tether js -->
+	<script src="js/tether.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- owl.carousel js -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- meanmenu js -->
+	<script src="js/jquery.meanmenu.js"></script>
+	<!-- jquery-ui js -->
+	<script src="js/jquery-ui-1.11.0.js"></script>
+	<!-- easypiechart js -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- particles js -->
+	<!-- wow js -->
+	<script src="js/wow.min.js"></script>
+	<!-- smooth-scroll js -->
+	<script src="js/smooth-scroll.min.js"></script>
+	<!-- plugins js -->
+	<script src="js/plugins.js"></script>
+	<!-- EChartJS JavaScript -->
+	<script src="js/echarts-en.min.js"></script>
+
+	<script src="js/vc_round_chart.min.js"></script>
+
+	<script src="js/constants.js"></script>
+	<script src="js/ethers-5.6.esm.min.js"></script>
+	<script src="js/index.js" type="module"></script>
+	<!---<script src="js/youtube.min.js"></script>--->
+	<!-- main js -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
